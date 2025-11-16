@@ -2,56 +2,28 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-       var dog=8.0;  //задача 1
-       var cat=3.6;
-       var paper=763789;
-       System.out.println(dog);
-       System.out.println(cat);
-       System.out.println(paper);
 
-       dog=dog+4; // задача 2
-        cat=cat+4;
-        paper=paper+4;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        int a=52357; //задача 1
+        byte b=15;
+        short c=150;
+        long d=3150456789L;
+        float e=5.67584f;
+        double f=9.19056789;
 
-        dog=dog-3.5; //задача 3
-        cat=cat-1.6;
-        paper=paper-7639;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        float g=27.12f;  //задача 2
+        long h=987678965549L;
+        float i=2.786f;
+        short j=569;
+        short k=-159;
+        short l=27897;
+        byte m=67;
 
-        var friend=19; //задача 4
-        System.out.println(friend);
-        friend=friend+2;
-        System.out.println(friend);
-        friend=friend/7;
-        System.out.println(friend);
 
-        var frog=3.5;  //задача 5
-        System.out.println(frog);
-        frog=frog*10;
-        System.out.println(frog);
-        frog=frog/3.5;
-        System.out.println(frog);
-        frog=frog+4;
-        System.out.println(frog);
 
-        var boxer1=78.2; // задача 6
-        var boxer2=82.7;
-        System.out.println("общая масса двух бойцов "+(boxer1+boxer2)+"кг");
-        System.out.println("второй боксер тежелее первого на "+(boxer2-boxer1)+"кг");
 
-        var a=boxer2%boxer1; //задача 7
-        System.out.println("остаток от деления между весами "+a);
 
-        var hours=640; // задача 8
-        var staff=640/8;
-        System.out.println("всего работников в компании - "+staff+" человек"); //задача 8.1
-        staff=staff+94;
-        hours=staff*8;
-        System.out.println("если в компании работает "+staff+" человек, то всего "+hours+" часов работы может быть поделено между сотрудниками");
+
+
+
     }
 }
