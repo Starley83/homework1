@@ -71,30 +71,31 @@ public class Main {
                 System.out.println("Совсем нет.");
             }
         }
-        int one = 5;  //задача 7
-        int two = 1;
-        int three = 5;
-          if (one > two && one > three) {
-            System.out.println("число one больше других");
+        int one = 2;  //задача 7
+        int two = 3;
+        int three = 3;
+        if (one > two && one > three) {
+            System.out.println("число one=" + one + " больше других");
         } else {
             if (two > three && two > one) {
-                System.out.println("число two больше других");
+                System.out.println("число two=" + two + " больше других");
             } else {
                 if (three > one && three > two) {
-                                           System.out.println("число three больше других");
-                    } else {if (one==two) {
-                    if (three==two) {
-                        System.out.println("эти числа равны");
-                    }
-                } else {  System.out.println(" Числа one и two равны и больше three");
-                    if (W) {
-                        ;
-                    } else {
-                        System.out.println("число two больше других");
-                    }
+                    System.out.println("число three=" + three + " больше других");
+                }
+                if (one == two && three == two) {
+                    System.out.println("эти числа равны" + one);
+                }
+                if (one == two && two > three) {
+                    System.out.println(" Числа one=" + one + " и two=" + two + " равны и больше three=" + three);
+                }
+                if (two == three && two > one) {
+                    System.out.println(" Числа three=" + three + " и two=" + two + " равны и больше one=" + one);
+                }
+                if (one == three && one > two) {
+                    System.out.println(" Числа three=" + three + " и one=" + one + " равны и больше two=" + two);
                 }
             }
         }
-
     }
 }
