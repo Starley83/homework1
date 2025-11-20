@@ -3,36 +3,29 @@
 public class Main {
     public static void main(String[] args) {
 // homework conditional operators if and else
-        int age = 17;  //задача 1
+        int age = 19;  //задача 1
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний.");
-        }
-        //else {  // variant 1
-        if (age < 18) {   //variant 2
+        } else {  // variant 1
+            //if (age < 18) {   //variant 2
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать.");
         }
 
-        int temp = -5;  //задача 2
-        if (temp < 5) {
+        int temp = -7;  //задача 2
+        if (temp <= 5) {
             System.out.println("На улице " + temp + " градусов, нужно надеть шапку.");
-        }
-        if (temp > 5) {
+        } else {
             System.out.println("На улице " + temp + " градусов, можно идти без шапки.");
         }
-        if (temp == 5) {
-            System.out.println("На улице " + temp + " градусов, в условиях задачи не задано, но шапку лучше надеть.");
-        }
 
-        int speed = 47;  //задача 3
-        if (speed < 60) {
+
+        int speed = 90;  //задача 3
+        if (speed <= 60) {
             System.out.println("Если скорость " + speed + " можно ездить спокойно.");
-        }
-        if (speed > 60) {
+        } else {
             System.out.println("Если скорость " + speed + " придется заплатить штраф.");
         }
-        if (speed == 60) {
-            System.out.println("Если скорость " + speed + " по ПДД можно ездить спокойно, если спидометр не врет.");
-        }
+
 
         int ageHuman = 4;  //задача 4
         if (ageHuman >= 2 && ageHuman <= 6) {
@@ -71,9 +64,9 @@ public class Main {
                 System.out.println("Совсем нет.");
             }
         }
-        int one = 2;  //задача 7
-        int two = 3;
-        int three = 3;
+        int one = 3;  //задача 7
+        int two = 2;
+        int three = 1;
         if (one > two && one > three) {
             System.out.println("число one=" + one + " больше других");
         } else {
@@ -82,19 +75,10 @@ public class Main {
             } else {
                 if (three > one && three > two) {
                     System.out.println("число three=" + three + " больше других");
+                } else {
+                    System.out.println("невозможно найти одно наибольшее число, возможно числа равны между собой, попробуйте ввести другие значения");
                 }
-                if (one == two && three == two) {
-                    System.out.println("эти числа равны" + one);
-                }
-                if (one == two && two > three) {
-                    System.out.println(" Числа one=" + one + " и two=" + two + " равны и больше three=" + three);
-                }
-                if (two == three && two > one) {
-                    System.out.println(" Числа three=" + three + " и two=" + two + " равны и больше one=" + one);
-                }
-                if (one == three && one > two) {
-                    System.out.println(" Числа three=" + three + " и one=" + one + " равны и больше two=" + two);
-                }
+
             }
         }
     }
