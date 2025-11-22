@@ -42,29 +42,33 @@ public class Main {
         }
 
         int monthNumber = 12; //задача 5
-        switch (monthNumber) {
-            case 1:
-            case 2:
-            case 12:
-                System.out.println("Это зимний месяц");
-                break;
-            case 3:
-            case 4:
-            case 5:
-                System.out.println("Это весенний месяц");
-                break;
-            case 6:
-            case 7:
-            case 8:
-                System.out.println("Это летний месяц");
-                break;
-            case 9:
-            case 10:
-            case 11:
-                System.out.println("Это весенний месяц");
-                break;
-            default:
-                System.out.println("Такого месяца не существует");
+        if (monthNumber > 12) {
+            System.out.println("Такого месяца не существует, попробуйте ввести заново");
+        } else {
+            switch (monthNumber) {
+                case 1:
+                case 2:
+                case 12:
+                    System.out.println("Это зимний месяц");
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    System.out.println("Это весенний месяц");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    System.out.println("Это летний месяц");
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    System.out.println("Это весенний месяц");
+                    break;
+                default:
+                    System.out.println("Такого месяца не существует");
+            }
         }
     }
 }
